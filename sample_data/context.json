@@ -5,10 +5,172 @@
     "pairing",
     "auction",
     "correction",
+    "disposal",
     "reconcile",
     "archive"
   ],
   "market": "东港水产",
   "currency": "CNY",
-  "weight_unit": "kg"
+  "weight_unit": "kg",
+  "abandonment_reports": [
+    {
+      "report_id": "AB-0001",
+      "ticket": "00001",
+      "version": 1,
+      "reported_at": "2026-11-17T06:10:00+08:00",
+      "buyer": "陈记水产",
+      "reason": "买方弃标，已过提货时限",
+      "evidence": {
+        "form": "弃标确认单 AB-0001",
+        "photos": [
+          "dock-00001-a.jpg"
+        ]
+      }
+    },
+    {
+      "report_id": "AB-0002",
+      "ticket": "00002",
+      "version": 1,
+      "reported_at": "2026-11-17T06:20:00+08:00",
+      "buyer": "顺发号",
+      "reason": "买方弃标",
+      "evidence": {
+        "form": "弃标确认单 AB-0002",
+        "photos": [
+          "dock-00002-a.jpg"
+        ]
+      }
+    },
+    {
+      "report_id": "AB-0003",
+      "ticket": "00003",
+      "version": 1,
+      "reported_at": "2026-11-17T06:30:00+08:00",
+      "buyer": "兴隆行",
+      "reason": "买方弃标",
+      "evidence": {
+        "form": "弃标确认单 AB-0003",
+        "photos": [
+          "dock-00003-a.jpg"
+        ]
+      }
+    },
+    {
+      "report_id": "AB-0005",
+      "ticket": "00005",
+      "version": 1,
+      "reported_at": "2026-11-17T06:40:00+08:00",
+      "buyer": "广源水产",
+      "reason": "买方弃标，等待重拍",
+      "evidence": {
+        "form": "弃标确认单 AB-0005"
+      }
+    },
+    {
+      "report_id": "AB-0006",
+      "ticket": "00006",
+      "version": 1,
+      "reported_at": "2026-11-17T06:50:00+08:00",
+      "buyer": "德丰行",
+      "reason": "买方弃标",
+      "evidence": {
+        "form": "弃标确认单 AB-0006"
+      }
+    },
+    {
+      "report_id": "AB-0010",
+      "ticket": "00010",
+      "version": 1,
+      "reported_at": "2026-11-17T07:05:00+08:00",
+      "buyer": "利民水产",
+      "reason": "买方弃标，鲜活货当日重拍",
+      "evidence": {
+        "form": "弃标确认单 AB-0010"
+      }
+    }
+  ],
+  "resale_attempts": [
+    {
+      "attempt_id": "RS-0001-1",
+      "report_id": "AB-0001",
+      "status": "filled",
+      "switch_status": "ok",
+      "buyer": "海泰行",
+      "amount": "1200.00",
+      "effective_at": "2026-11-17T06:55:00+08:00",
+      "evidence": {
+        "contract": "重拍成交单 RS-0001-1"
+      }
+    },
+    {
+      "attempt_id": "RS-0002-1",
+      "report_id": "AB-0002",
+      "status": "failed",
+      "buyer": "无人应价",
+      "effective_at": "2026-11-17T07:00:00+08:00"
+    },
+    {
+      "attempt_id": "RS-0002-2",
+      "report_id": "AB-0002",
+      "status": "filled",
+      "switch_status": "ok",
+      "buyer": "联丰行",
+      "amount": "1000.00",
+      "effective_at": "2026-11-17T07:15:00+08:00",
+      "evidence": {
+        "contract": "重拍成交单 RS-0002-2"
+      }
+    },
+    {
+      "attempt_id": "RS-0003-1",
+      "report_id": "AB-0003",
+      "status": "filled",
+      "switch_status": "failed",
+      "buyer": "合兴行",
+      "amount": "1010.00",
+      "effective_at": "2026-11-17T07:20:00+08:00",
+      "evidence": {
+        "contract": "重拍成交单 RS-0003-1"
+      }
+    },
+    {
+      "attempt_id": "RS-0006-1",
+      "report_id": "AB-0006",
+      "status": "filled",
+      "switch_status": "ok",
+      "buyer": "永利行",
+      "amount": "1000.00",
+      "effective_at": "2026-11-17T07:30:00+08:00",
+      "evidence": {
+        "contract": "重拍成交单 RS-0006-1"
+      }
+    },
+    {
+      "attempt_id": "RS-0006-2",
+      "report_id": "AB-0006",
+      "status": "filled",
+      "switch_status": "rollback",
+      "buyer": "溢丰行",
+      "amount": "1300.00",
+      "effective_at": "2026-11-17T07:45:00+08:00",
+      "evidence": {
+        "contract": "重拍成交单 RS-0006-2"
+      }
+    },
+    {
+      "attempt_id": "RS-0010-1",
+      "report_id": "AB-0010",
+      "status": "filled",
+      "switch_status": "ok",
+      "buyer": "东盛行",
+      "net_kg": "92",
+      "price": "11.80",
+      "rate": "0.05",
+      "effective_at": "2026-11-17T07:35:00+08:00",
+      "evidence": {
+        "contract": "重拍成交单 RS-0010-1",
+        "note": "当日复秤，失水后净重 92kg"
+      }
+    }
+  ]
 }

@@ -1,10 +1,9 @@
 from fastapi import APIRouter, Request, Body
-from app.engine import evaluate
-from app.web import render
+from app.web import render, run_module
 router=APIRouter()
 @router.get('/archive')
 def page(request:Request):
     return render(request,'archive')
 @router.post('/api/archive')
 def calculate(payload:dict=Body(default={})):
-    return evaluate(payload,until=7)
+    return run_module(payload)
